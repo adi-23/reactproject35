@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 function Home() {
-    const [productinfo, setProductinfo] = useState([])
+    const [productinfo, setProductinfo] = useState({ products: []})
     const [sar,setSar] = useState("hello")
 
     
@@ -10,6 +10,9 @@ function Home() {
             .then((response) => response.json())
             .then((data) =>{ 
                 console.log(data);
+                setProductinfo({
+                    products: data
+                })
                 
             });
 
@@ -17,11 +20,21 @@ function Home() {
     useEffect(()=>{
         fetchData()
     },[])
-
+    const { products} = productinfo
     return (
+
+
+        
+
         <div >
             List of products
-            { productinfo } 
+            { products.map((product) => <div>
+                <h5>id :{product.price}</h5>
+                <h6>category :{product.categories}</h6>
+                <h2>item: {product.title}</h2>
+                <h3>brand: {product.brand}</h3>
+                <h1>price :{product.price}</h1>
+                </div>) }
         </div>
     )
 }

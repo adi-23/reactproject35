@@ -6,6 +6,13 @@
       "title": "T-shirt",
       "brand": "Jack and Jones",
       "price": 600
+    },
+    {
+      "id": 2,
+      "categories": "shirt",
+      "title": "formal shirt",
+      "brand": "Twills",
+      "price": 800
     }
   ],
   "comments": [
