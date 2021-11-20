@@ -1,21 +1,27 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 
 function Home() {
+    const [productinfo, setProductinfo] = useState([])
+    const [sar,setSar] = useState("hello")
 
+    
     const fetchData = () => {
         return fetch("http://localhost:5000/products")
-              .then((response) => response.json())
-              .then((data) => console.log(data));}
+            .then((response) => response.json())
+            .then((data) =>{ 
+                console.log(data);
+                
+            });
 
+    }
     useEffect(()=>{
-
-        fetchData();
-
+        fetchData()
     },[])
 
     return (
-        <div>
-            List of products 
+        <div >
+            List of products
+            { productinfo } 
         </div>
     )
 }

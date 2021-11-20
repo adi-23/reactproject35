@@ -2,18 +2,20 @@
   "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "categories": "shirt",
+      "title": "T-shirt",
+      "brand": "Jack and Jones",
+      "price": 600
     }
   ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
-      "postId": 1
+      "productId": 1
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "user1"
   }
 }
