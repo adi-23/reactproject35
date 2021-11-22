@@ -7,7 +7,7 @@ function Nav() {
     return (
         
             
-            <Router>
+            
                 <div>
                     <Link to="/">Home</Link>
                     <Link to="/aboutus">Aboutus</Link>
@@ -17,12 +17,7 @@ function Nav() {
             
             
             
-                <Routes>
-                 <Route exact path="/" element={<Home />} />
-                 <Route exact path="/aboutus" element={<Aboutus />} />
-                 <Route exact path="/cart" element={<Cart />} />
-                </Routes>
-            </Router>
+            
           
         )
 }

@@ -1,0 +1,3 @@
+const loginSuccessful = ()=>{
+    type:"loginSuccessful"
+}

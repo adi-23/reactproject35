@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import Nav from './Nav'
 
 function Home() {
     const [productinfo, setProductinfo] = useState({ products: []})
@@ -27,6 +28,7 @@ function Home() {
         
 
         <div >
+            <Nav />
             List of products
             { products.map((product) => <div>
                 <h5>id :{product.price}</h5>

@@ -1,4 +1,22 @@
 {
+  "users": [
+    {
+      "credentials": "madhesh:loser",
+      "id": 1
+    },
+    {
+      "credentials": "jyothi:12345",
+      "id": 2
+    },
+    {
+      "credentials": "watched:done",
+      "id": 3
+    },
+    {
+      "credentials": "aditya123:adityapk",
+      "id": 4
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -21,8 +39,5 @@
       "body": "some comment",
       "productId": 1
     }
-  ],
-  "profile": {
-    "name": "user1"
-  }
+  ]
 }

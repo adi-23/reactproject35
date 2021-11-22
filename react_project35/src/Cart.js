@@ -1,11 +1,15 @@
 import React from 'react'
 
+
+
 function Cart() {
     return (
         <div>
-            Cart
+            <p> User successfully logged in </p>
+            {/* <i class="fas fa-shopping-cart"></i> */}
+        
         </div>
     )
 }
 
-export default Cart
+export default Cart;
