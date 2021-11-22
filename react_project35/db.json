@@ -15,6 +15,40 @@
     {
       "credentials": "aditya123:adityapk",
       "id": 4
+    },
+    {
+      "credentials": "varshini:varshini23",
+      "id": 5
+    },
+    {
+      "credentials": "var:varshini23",
+      "id": 6
+    }
+  ],
+  "catogeries": [
+    {
+      "cid": 1,
+      "category": "Mobiles"
+    },
+    {
+      "cid": 2,
+      "category": "Electronics"
+    },
+    {
+      "cid": 3,
+      "category": "Home & Kitchen"
+    },
+    {
+      "cid": 4,
+      "category": "Computers"
+    },
+    {
+      "cid": 5,
+      "category": "Books"
+    },
+    {
+      "cid": 6,
+      "category": "Fashion"
     }
   ],
   "products": [
@@ -36,8 +70,25 @@
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "body": [
+        "some comment"
+      ],
       "productId": 1
+    },
+    {
+      "id": 3,
+      "body": [
+        "Better taste"
+      ],
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "body": [
+        "Nice product",
+        "cloth quality is good"
+      ],
+      "productId": 2
     }
   ]
 }

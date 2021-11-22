@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Nav from './Nav'
+import Product from './components/Product'
 
 function Home() {
     const [productinfo, setProductinfo] = useState({ products: []})
@@ -21,6 +22,9 @@ function Home() {
     useEffect(()=>{
         fetchData()
     },[])
+
+    
+
     const { products} = productinfo
     return (
 
@@ -30,13 +34,9 @@ function Home() {
         <div >
             <Nav />
             List of products
-            { products.map((product) => <div>
-                <h5>id :{product.price}</h5>
-                <h6>category :{product.categories}</h6>
-                <h2>item: {product.title}</h2>
-                <h3>brand: {product.brand}</h3>
-                <h1>price :{product.price}</h1>
-                </div>) }
+            { products.map((product) =>
+            
+            <Product product={product} />) }
         </div>
     )
 }

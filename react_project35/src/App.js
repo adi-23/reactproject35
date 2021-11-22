@@ -27,7 +27,7 @@ function App({login}) {
         <Route path="/home" element={<Home />}></Route>
         <Route path="signup" element={ <Signup />}></Route>
         <Route exact path="/aboutus" element={<Aboutus />} />
-         <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/cart" element={<Cart />} />
         
       </Routes>
       </div>
