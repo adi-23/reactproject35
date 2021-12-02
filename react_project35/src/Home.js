@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Nav from './Nav'
 import Product from './components/Product'
-
+import Categorie from './components/Categorie'
 function Home() {
     const [productinfo, setProductinfo] = useState({ products: []})
     const [sar,setSar] = useState("hello")
@@ -33,6 +33,7 @@ function Home() {
 
         <div >
             <Nav />
+            <Categorie />
             List of products
             { products.map((product) =>
             
