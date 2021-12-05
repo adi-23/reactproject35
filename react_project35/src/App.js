@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 import Aboutus from './Aboutus';
 import Cart from './Cart';
 import {connect} from "react-redux";
+import Categorie from './components/Categorie';
 function App({login}) {
   
 
@@ -28,7 +29,7 @@ function App({login}) {
         <Route path="signup" element={ <Signup />}></Route>
         <Route exact path="/aboutus" element={<Aboutus />} />
         <Route exact path="/cart" element={<Cart />} />
-        
+        <Route exact path="/category" element={<Categorie/>} />
       </Routes>
       </div>
     </div>
