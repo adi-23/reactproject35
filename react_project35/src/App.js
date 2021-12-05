@@ -29,7 +29,7 @@ function App({login}) {
         <Route path="signup" element={ <Signup />}></Route>
         <Route exact path="/aboutus" element={<Aboutus />} />
         <Route exact path="/cart" element={<Cart />} />
-        <Route exact path="/category" element={<Categorie/>} />
+        <Route exact path="/category/:value" element={() => <Categorie name={`value`}/>} />
       </Routes>
       </div>
     </div>

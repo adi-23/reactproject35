@@ -24,7 +24,7 @@ function Home() {
 
     const { c } = categoryinfo
     return (
-
+        
 
         
 
@@ -34,7 +34,7 @@ function Home() {
             List of categories
             {
                 c.map((cat)=> <button>{ cat.category}
-                <Link to="/category">explore</Link>
+                <Link to={`/category/${ cat.category }`}>explore</Link>
                 
                 </button>)
             }

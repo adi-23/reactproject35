@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Product from './Product'
-function Categorie() {
+function Categorie(props) {
 
     const [productinfo, setProductinfo] = useState({ products: []})
     const [sar,setSar] = useState("hello")
@@ -33,7 +33,7 @@ function Categorie() {
 
         <div>
             
-
+            { this.props.name }
             { products.map((product) =>
                         
                         <Product product={product} />) }
