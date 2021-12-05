@@ -1,35 +1,42 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
+import Product from './Product'
 function Categorie() {
-    
-    const [categoryinfo, setCategoryinfo] = useState({
-        c: []
-    })
 
-    const fetchCategories = () =>{
-        return fetch("http://localhost:5000/catogeries").then((response)=>{
-            response.json()
-        }).then((data) =>{
-            console.log(data)
-            setCategoryinfo({
-                c: data
-            })
-        })
+    const [productinfo, setProductinfo] = useState({ products: []})
+    const [sar,setSar] = useState("hello")
+
+    
+    const fetchData = () => {
+        return fetch("http://localhost:5000/products")
+            .then((response) => response.json())
+            .then((data) =>{ 
+                console.log(data);
+                setProductinfo({
+                    products: data
+                })
+                
+            });
 
     }
+    useEffect(()=>{
+        fetchData()
+    },[])
 
-    useEffect(() => {
-        fetchCategories()
-    }, [])
+    
 
-    const { c } = categoryinfo
+    const { products} = productinfo
+    
+    
     
     return (
 
         <div>
-            {
-                c.map((cat)=><h1>{ cat.cid }</h1>)
-            }
+            
+
+            { products.map((product) =>
+                        
+                        <Product product={product} />) }
         </div>
     )
 }

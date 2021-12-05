@@ -3,29 +3,25 @@ import Nav from './Nav'
 import Product from './components/Product'
 import Categorie from './components/Categorie'
 function Home() {
-    const [productinfo, setProductinfo] = useState({ products: []})
-    const [sar,setSar] = useState("hello")
+    const [categoryinfo, setCategoryinfo] = useState({
+        c: []
+    })
 
-    
-    const fetchData = () => {
-        return fetch("http://localhost:5000/products")
-            .then((response) => response.json())
-            .then((data) =>{ 
-                console.log(data);
-                setProductinfo({
-                    products: data
-                })
-                
-            });
+    const fetchCategories = () =>{
+        return fetch("http://localhost:5000/catogeries").then((response)=> response.json()).then((data) =>{
+            console.log(data)
+            setCategoryinfo({
+                c: data
+            })
+        })
 
     }
-    useEffect(()=>{
-        fetchData()
-    },[])
 
-    
+    useEffect(() => {
+        fetchCategories()
+    }, [])
 
-    const { products} = productinfo
+    const { c } = categoryinfo
     return (
 
 
@@ -33,11 +29,14 @@ function Home() {
 
         <div >
             <Nav />
-            <Categorie />
-            List of products
-            { products.map((product) =>
+            {/* <Categorie /> */}
+            List of categories
+            {
+                c.map((cat)=> <h1>{ cat.cid }</h1>)
+            }
+            {/* { products.map((product) =>
             
-            <Product product={product} />) }
+            <Product product={product} />) } */}
         </div>
     )
 }
