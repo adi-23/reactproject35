@@ -14,8 +14,6 @@ function App({login}) {
   
 
   
-  
-  
   return (
     <Router>
     
@@ -29,7 +27,7 @@ function App({login}) {
         <Route path="signup" element={ <Signup />}></Route>
         <Route exact path="/aboutus" element={<Aboutus />} />
         <Route exact path="/cart" element={<Cart />} />
-        <Route exact path="/category/:value" element={() => <Categorie name={`value`}/>} />
+        <Route exact path="/category/:value" element={ <Categorie />}  />
       </Routes>
       </div>
     </div>

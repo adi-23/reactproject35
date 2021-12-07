@@ -36,7 +36,7 @@
     },
     {
       "cid": 3,
-      "category": "Home & Kitchen"
+      "category": "Home&Kitchen"
     },
     {
       "cid": 4,
@@ -54,17 +54,24 @@
   "products": [
     {
       "id": 1,
-      "categories": "shirt",
+      "categories": "Mobiles",
       "title": "T-shirt",
       "brand": "Jack and Jones",
       "price": 600
     },
     {
       "id": 2,
-      "categories": "shirt",
+      "categories": "Fashion",
       "title": "formal shirt",
       "brand": "Twills",
       "price": 800
+    },
+    {
+      "id": 3,
+      "categories": "Home&Kitchen",
+      "title": "Cooker",
+      "brand": "Preethi",
+      "price": 600
     }
   ],
   "comments": [

@@ -1,11 +1,14 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Product from './Product'
+import { useLocation } from "react-router-dom";
+
 function Categorie(props) {
 
     const [productinfo, setProductinfo] = useState({ products: []})
     const [sar,setSar] = useState("hello")
 
+    const l1 = useLocation();
     
     const fetchData = () => {
         return fetch("http://localhost:5000/products")
@@ -27,14 +30,29 @@ function Categorie(props) {
 
     const { products} = productinfo
     
+    const getCategory = (pathname) => {
+        let str = pathname.split("/")
+        return str[str.length - 1]
+    }
+
+    let cat = getCategory(l1.pathname)
+
     
-    
+    let pro =[];
+
+    for (let i=0; i< products.length; i++){
+        if(products[i].categories === cat){
+            
+            pro.push(products[i])
+        }
+    }
+
     return (
 
         <div>
             
-            { this.props.name }
-            { products.map((product) =>
+            
+            { pro.map((product) =>
                         
                         <Product product={product} />) }
         </div>
