@@ -23,6 +23,10 @@
     {
       "credentials": "var:varshini23",
       "id": 6
+    },
+    {
+      "credentials": "uppalanishita11@gmail.com:12345",
+      "id": 7
     }
   ],
   "catogeries": [
@@ -55,8 +59,8 @@
     {
       "id": 1,
       "categories": "Mobiles",
-      "title": "T-shirt",
-      "brand": "Jack and Jones",
+      "title": "mobile",
+      "brand": "Redmi",
       "price": 600
     },
     {
@@ -72,6 +76,13 @@
       "title": "Cooker",
       "brand": "Preethi",
       "price": 600
+    },
+    {
+      "id": 4,
+      "categories": "Electronics",
+      "title": "Home Audio",
+      "brand": "JBL",
+      "price": 700
     }
   ],
   "comments": [
@@ -96,6 +107,32 @@
         "cloth quality is good"
       ],
       "productId": 2
+    }
+  ],
+  "cart": [
+    {
+      "productId": 1,
+      "quantity": 4,
+      "id": 1
+    },
+    {
+      "productId": 4,
+      "quantity": 1,
+      "id": 2
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "address": "Nellore"
+    },
+    {
+      "address": "Madhapur",
+      "id": 2
+    },
+    {
+      "address": "ameerpet",
+      "id": 3
     }
   ]
 }

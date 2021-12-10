@@ -12,6 +12,7 @@ function Nav() {
                     <Link to="/home">Home</Link>
                     <Link to="/aboutus">Aboutus</Link>
                     <Link to="/cart">Cart</Link>
+                    <Link to="/profile">Address</Link>
                     
                 </div>
             
