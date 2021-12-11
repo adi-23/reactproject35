@@ -12,7 +12,7 @@ function Nav(props) {
                     <Link to="/home">Home</Link>
                     <Link to="/aboutus">Aboutus</Link>
                     <Link to="/cart">Cart</Link>
-                    <Link to="/profile">Profile of { props.user} </Link>
+                    <Link to="/profileform">Profile of { props.user} </Link>
                     <Link to="/">signout</Link>
                     
                 </div>

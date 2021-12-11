@@ -9,7 +9,7 @@ import Aboutus from './Aboutus';
 import Cart from './Cart';
 import {connect} from "react-redux";
 import Categorie from './components/Categorie';
-import Profile from './components/ProfileForm';
+import ProfileForm from './components/ProfileForm';
 function App({login}) {
   
   console.log(login)
@@ -23,7 +23,7 @@ function App({login}) {
       <div className="content">
       <Routes>
       <Route exact path="/" element={<Login />}></Route>
-      <Route exact path="/profile" element={<Profile />}  />
+      <Route exact path="/profileform" element={<ProfileForm />}  />
         <Route path="/home" element={<Home />}></Route>
         
         <Route path="signup" element={ <Signup />}></Route>

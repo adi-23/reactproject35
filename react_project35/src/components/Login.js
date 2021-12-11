@@ -62,7 +62,7 @@ function Login() {
             
            
 
-           <div class="form-container sign-in-container">
+           <div className="form-container sign-in-container">
                 <form action="#">
                     <h1>Sign in</h1>
                     
@@ -72,13 +72,13 @@ function Login() {
                     <button onClick={ checkLogin }>Sign In</button>
                 </form>
 	        </div>
-            <div class="overlay-container">
-                <div class="overlay">
+            <div className="overlay-container">
+                <div className="overlay">
                     
-                    <div class="overlay-panel overlay-right">
+                    <div className="overlay-panel overlay-right">
                         <h1>Hello, Friend!</h1>
                         <p>Enter your personal details and start journey with us</p>
-                        <Link to="/signup"><button class="ghost" id="signUp">Sign Up</button></Link>
+                        <Link to="/signup"><button className="ghost" id="signUp">Sign Up</button></Link>
                     </div>
                 </div>
             </div>

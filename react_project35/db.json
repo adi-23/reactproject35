@@ -123,24 +123,13 @@
   ],
   "profile": [
     {
-      "id": 1,
-      "address": "Nellore"
-    },
-    {
-      "address": "Madhapur",
-      "id": 2
-    },
-    {
-      "address": "ameerpet",
-      "id": 3
-    },
-    {
-      "address": "hyd",
-      "id": 4
-    },
-    {
-      "address": "",
-      "id": 5
+      "userId": "",
+      "firstname": "Kota",
+      "lastname": "Venkata Sai Varshini",
+      "H.no": "8-4-645",
+      "city": "NELLORE",
+      "address": "Sapthagiri Enclave,Pappula street,Nellore",
+      "id": 1
     }
   ]
 }
