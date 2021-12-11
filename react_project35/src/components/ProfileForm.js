@@ -11,7 +11,8 @@ function Profile(){
         }
 
         axios.post("http://localhost:5000/profile", addressInfo)
-
+        
+        console.log(address)
     }
 
     return(

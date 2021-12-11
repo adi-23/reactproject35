@@ -3,7 +3,8 @@ import Nav from './Nav'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Product from './components/Product'
 import Categorie from './components/Categorie'
-function Home() {
+import {connect} from "react-redux";
+function Home({loginUser}) {
     const [categoryinfo, setCategoryinfo] = useState({
         c: []
     })
@@ -25,11 +26,11 @@ function Home() {
     const { c } = categoryinfo
     return (
         
-
+        
         
 
         <div >
-            <Nav />
+            <Nav user={loginUser} />
             {/* <Categorie /> */}
             List of categories
             {
@@ -45,4 +46,14 @@ function Home() {
     )
 }
 
-export default Home
+const mapStateToProps =(state)=>{
+  
+    return {
+        
+        loginUser: state.userReducer.username
+        
+    }
+  }
+  
+  export default connect(mapStateToProps)(Home);
+  

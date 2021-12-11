@@ -27,30 +27,21 @@ function Login() {
             let a= (users) => {
                 for (let i=0;i<users.length;i++){
                     if(users[i].credentials===username+':'+ password){
-                        return true;
+                        return {status: true,username: username};
                     }
                     
                 }
-                return false;
+                return {status: false};
             }
             
             let authenticate = a(users)
-
-
-            
-
-            
-
-            
-            
-            
-        
-
 
             // let authenticate = data.includes(username+':'+ password);
             if(authenticate)
             {
                 store.dispatch({type:"loginSuccess"});
+                store.dispatch({type:"loginUser",payload: {username: username}})
+                
                 //return <Navigate to='/home' />
                navigate('/home')
             }

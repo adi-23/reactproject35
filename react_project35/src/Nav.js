@@ -3,7 +3,7 @@ import Home from './Home'
 import Aboutus from './Aboutus';
 import Cart from './Cart';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-function Nav() {
+function Nav(props) {
     return (
         
             
@@ -12,7 +12,8 @@ function Nav() {
                     <Link to="/home">Home</Link>
                     <Link to="/aboutus">Aboutus</Link>
                     <Link to="/cart">Cart</Link>
-                    <Link to="/profile">Address</Link>
+                    <Link to="/profile">Profile of { props.user} </Link>
+                    <Link to="/">signout</Link>
                     
                 </div>
             
