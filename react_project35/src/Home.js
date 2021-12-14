@@ -3,7 +3,9 @@ import Nav from './Nav'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Product from './components/Product'
 import Categorie from './components/Categorie'
+
 import {connect} from "react-redux";
+import Footer from './components/Footer';
 function Home({loginUser}) {
     const [categoryinfo, setCategoryinfo] = useState({
         c: []
@@ -39,9 +41,8 @@ function Home({loginUser}) {
                 
                 </button>)
             }
-            {/* { products.map((product) =>
-            
-            <Product product={product} />) } */}
+
+            <Footer />
         </div>
     )
 }

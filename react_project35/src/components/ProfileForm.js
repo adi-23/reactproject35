@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios'
 import {connect} from "react-redux";
-
+import { Icon } from "semantic-ui-react";
 
 function ProfileForm({loginUser}){
     const [firstName, processFirstName] = useState("");
@@ -27,6 +27,9 @@ function ProfileForm({loginUser}){
 
     return(
         <div>
+            <div class="userIcon">
+              <Icon name="user circle" size="huge" />
+            </div>
             <form className="ui form">
                 <div  className="field">
                     <label>First name</label>

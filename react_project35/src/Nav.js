@@ -8,7 +8,8 @@ function Nav(props) {
         
             
             
-                <div>
+                <div className="Navbar">
+                    
                     <Link to="/home">Home</Link>
                     <Link to="/aboutus">Aboutus</Link>
                     <Link to="/cart">Cart</Link>
