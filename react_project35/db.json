@@ -130,6 +130,15 @@
       "city": "NELLORE",
       "address": "Sapthagiri Enclave,Pappula street,Nellore",
       "id": 1
+    },
+    {
+      "username": "madhesh",
+      "firstname": "madesh",
+      "lastname": "medasani",
+      "H.no": "998-90-7",
+      "city": "guntur",
+      "address": "guntur dist",
+      "id": 2
     }
   ]
 }

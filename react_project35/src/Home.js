@@ -3,9 +3,18 @@ import Nav from './Nav'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Product from './components/Product'
 import Categorie from './components/Categorie'
-
 import {connect} from "react-redux";
-import Footer from './components/Footer';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import Box from '@mui/material/Box';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { Link as RouterLink } from 'react-router-dom';
+import { Container } from '@mui/material';
+
+
 function Home({loginUser}) {
     const [categoryinfo, setCategoryinfo] = useState({
         c: []
@@ -24,28 +33,61 @@ function Home({loginUser}) {
     useEffect(() => {
         fetchCategories()
     }, [])
+    // var cardStyle = {
+    //     display: 'block',
+    //     width: '30vw',
+    //     transitionDuration: '0.3s',
+    //     height: '45vw'
+    // }
 
     const { c } = categoryinfo
+    
     return (
-        
-        
-        
-
-        <div >
-            <Nav user={loginUser} />
-            {/* <Categorie /> */}
-            List of categories
+            
+            <div>
+               <Nav user={loginUser}/> 
+            <Container style={{marginTop:20}}>
+            
+            <Grid container spacing={6} >
+            
+            
             {
-                c.map((cat)=> <button>{ cat.category}
-                <Link to={`/category/${ cat.category }`}>explore</Link>
+                c.map((cat)=>
                 
-                </button>)
+                
+                <Grid item xs={3} md={8} lg={4}>
+                
+                
+                <Card  raised="true">
+                
+                <CardActionArea component={RouterLink} to={`/category/${ cat.category }`}>
+                <CardMedia
+                component="img"
+                height="150"
+                image= {`/images/cards/${ cat.category }.jfif`}
+                alt="green iguana"
+                />
+                
+                <CardContent>
+                    <Typography variant="h3" color="text.primary">{ cat.category}</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    
+                    </Typography>
+                </CardContent>
+                
+                </CardActionArea>
+                
+                </Card>
+                </Grid>
+               
+            )
             }
-
-            <Footer />
-        </div>
-    )
-}
+             </Grid>
+        
+        </Container>
+            </div>
+        )
+        }
 
 const mapStateToProps =(state)=>{
   
@@ -56,5 +98,5 @@ const mapStateToProps =(state)=>{
     }
   }
   
-  export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(Home);
   

@@ -9,7 +9,10 @@ function ProfileForm({loginUser}){
     const [houseNo, processHouseNo] = useState("");
     const [city, processCity] = useState("");
     const [address , processAddress] = useState("");
-    
+    const [multipleadd,processMultipleadd]= useState({
+        listadd: []
+    })
+
     const save = () => {
         var addressInfo = {
             "username" : loginUser,
@@ -21,9 +24,10 @@ function ProfileForm({loginUser}){
         }
 
         axios.post("http://localhost:5000/profile", addressInfo)
-        
-    }
 
+        
+
+    }
 
     return(
         <div>
