@@ -12,7 +12,7 @@ function ProfileForm({loginUser}){
     
     const save = () => {
         var addressInfo = {
-            "userId" : loginUser,
+            "username" : loginUser,
             "firstname" : firstName,
             "lastname" : lastName,
             "H.no" : houseNo,
@@ -58,7 +58,7 @@ function ProfileForm({loginUser}){
                 </div>
 
             
-                <button onClick={save} className="ui button" type="submit">Submit</button>
+                <input onClick={save} className="ui button" type="button" value="Submit" />
             </form> 
 
             

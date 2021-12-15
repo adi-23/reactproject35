@@ -10,6 +10,9 @@ import Cart from './Cart';
 import {connect} from "react-redux";
 import Categorie from './components/Categorie';
 import ProfileForm from './components/ProfileForm';
+import Profile from './components/Profile';
+import ProfileUpdate from './components/ProfileUpdate';
+
 function App({login}) {
   
   console.log(login)
@@ -30,6 +33,8 @@ function App({login}) {
         <Route exact path="/aboutus" element={<Aboutus />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/category/:value" element={ <Categorie />}  />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/profileupdate" element={<ProfileUpdate />} />
       </Routes>
       </div>
     </div>
