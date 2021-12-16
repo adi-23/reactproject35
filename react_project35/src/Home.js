@@ -46,7 +46,7 @@ function Home({loginUser}) {
             
             <div>
                <Nav user={loginUser}/> 
-            <Container style={{marginTop:20}}>
+            <Container style={{marginTop:70}}>
             
             <Grid container spacing={6} >
             

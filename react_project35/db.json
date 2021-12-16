@@ -139,6 +139,15 @@
       "city": "guntur",
       "address": "guntur dist",
       "id": 2
+    },
+    {
+      "username": "madhesh",
+      "firstname": "aditya",
+      "lastname": "kotikalpudi",
+      "H.no": "998-23/6",
+      "city": "near temple",
+      "address": "palakollu",
+      "id": 3
     }
   ]
 }
