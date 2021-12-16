@@ -44,7 +44,7 @@ function Home({loginUser}) {
     
     return (
             
-            <div>
+            <div className='cont'>
                <Nav user={loginUser}/> 
             <Container style={{marginTop:70}}>
             
