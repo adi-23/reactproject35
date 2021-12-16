@@ -4,7 +4,6 @@ let userState = {
 
 
 const userReducer = (state=userState,action)=>{
-    console.log("hi")
     switch (action.type) {
         case "loginUser":
             console.log(action.payload.username)

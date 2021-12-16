@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios'
 import {connect} from "react-redux";
-import { Icon } from "semantic-ui-react";
+import {useNavigate} from 'react-router-dom';
 
 function ProfileForm({loginUser}){
     const [firstName, processFirstName] = useState("");
@@ -12,6 +12,8 @@ function ProfileForm({loginUser}){
     const [multipleadd,processMultipleadd]= useState({
         listadd: []
     })
+
+    const navigate = useNavigate()
 
     const save = () => {
         var addressInfo = {
@@ -25,15 +27,14 @@ function ProfileForm({loginUser}){
 
         axios.post("http://localhost:5000/profile", addressInfo)
 
-        
+        navigate('/profile')
 
     }
 
     return(
         <div>
-            <div class="userIcon">
-              <Icon name="user circle" size="huge" />
-            </div>
+            
+            <center><h1>Please enter your personal details and delivery address</h1></center>
             <form className="ui form">
                 <div  className="field">
                     <label>First name</label>

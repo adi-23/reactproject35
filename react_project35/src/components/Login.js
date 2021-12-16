@@ -67,7 +67,7 @@ function Login() {
                     <h1>Sign in</h1>
                     
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" onChange={(event)=>{setUsername(event.target.value)}} />
+                    <input type="text" placeholder="Username" onChange={(event)=>{setUsername(event.target.value)}} />
                     <br></br>
                     <input type="password" placeholder="Password" onChange={(event)=>{setPassword(event.target.value)}} />
                     <button onClick={ checkLogin }>Sign In</button>

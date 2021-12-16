@@ -136,6 +136,42 @@
       "city": "near temple",
       "address": "palakollu",
       "id": 3
+    },
+    {
+      "username": "uppalanishita11@gmail.com",
+      "firstname": "Uppala",
+      "lastname": "NIshita",
+      "H.no": "6/560",
+      "city": "Hyderabad",
+      "address": "Musapet",
+      "id": 4
+    },
+    {
+      "username": "var",
+      "firstname": "Kota",
+      "lastname": "Varshini",
+      "H.no": "8-4-645",
+      "city": "NELLORE",
+      "address": "Sapthagiri Enclave,Pappula street,Nellore",
+      "id": 5
+    },
+    {
+      "username": "jyothi",
+      "firstname": "Jyothi",
+      "lastname": "K",
+      "H.no": "6/560",
+      "city": "NELLORE",
+      "address": "Sapthagiri Enclave,Pappula street,Nellore",
+      "id": 6
+    },
+    {
+      "username": "",
+      "firstname": "Kota",
+      "lastname": "Varshini",
+      "H.no": "8-4-645",
+      "city": "NELLORE",
+      "address": "Sapthagiri Enclave,Pappula street,Nellore",
+      "id": 7
     }
   ]
 }

@@ -43,7 +43,7 @@ function Signup() {
                         <h1>Create Account</h1>
                     
                     <span>or use your email for registration</span>
-                    <input type="email" placeholder="Email" onChange={(event)=>{setUsername(event.target.value)}} />
+                    <input type="text" placeholder="Username" onChange={(event)=>{setUsername(event.target.value)}} />
                     <input type="password" placeholder="Password" onChange={(event)=>{setPassword(event.target.value)}} />
                     <button onClick={ Signupuser }>Sign Up</button>
                 </form>
