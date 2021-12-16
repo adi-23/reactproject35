@@ -16,21 +16,29 @@ function Signup() {
     const [ username,setUsername ] = useState("");
     const [ password,setPassword ] = useState("");
     const Signupuser = ()=>{
+        const len1 = username.length;
+        const len2 = password.length;
         const newUser = {credentials: username+":"+password};
 
-        fetch("http://localhost:5000/users",{
-            method:"POST",
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(newUser)
-        
-
-        }).then(()=>{
-            navigate("/")
-           
-
-            console.log("Signup successful")
+        if(len1 !== 0 && len2 !== 0){
+                fetch("http://localhost:5000/users",{
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(newUser)
             
-        })
+
+            }).then(()=>{
+                navigate("/")
+            
+
+                console.log("Signup successful")
+                
+            })
+        }
+
+        else{
+            navigate("/signup")
+        }
 
 
     }
@@ -39,14 +47,15 @@ function Signup() {
     return (
         <div >
             <div className="form-container sign-up-container">
-                <form action="#">
+                 <div className="form">
                         <h1>Create Account</h1>
                     
                     <span>or use your email for registration</span>
-                    <input type="text" placeholder="Username" onChange={(event)=>{setUsername(event.target.value)}} />
-                    <input type="password" placeholder="Password" onChange={(event)=>{setPassword(event.target.value)}} />
+                    <input type="text" placeholder="Username" onChange={(event)=>{setUsername(event.target.value)}} required />
+                    <input type="password" placeholder="Password" onChange={(event)=>{setPassword(event.target.value)}} required />
                     <button onClick={ Signupuser }>Sign Up</button>
-                </form>
+                </div>
+                
 	        </div>
             <div className="overlay-container">
                 <div className="overlay">

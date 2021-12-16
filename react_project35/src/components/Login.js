@@ -27,11 +27,11 @@ function Login() {
             let a= (users) => {
                 for (let i=0;i<users.length;i++){
                     if(users[i].credentials===username+':'+ password){
-                        return {status: true,username: username};
+                        return true;
                     }
                     
                 }
-                return {status: false};
+                return false;
             }
             
             let authenticate = a(users)
@@ -63,7 +63,7 @@ function Login() {
            
 
            <div className="form-container sign-in-container">
-                <form action="#">
+                <div className="form">
                     <h1>Sign in</h1>
                     
                     <span>or use your account</span>
@@ -71,7 +71,7 @@ function Login() {
                     <br></br>
                     <input type="password" placeholder="Password" onChange={(event)=>{setPassword(event.target.value)}} />
                     <button onClick={ checkLogin }>Sign In</button>
-                </form>
+                </div>
 	        </div>
             <div className="overlay-container">
                 <div className="overlay">

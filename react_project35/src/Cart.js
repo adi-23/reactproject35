@@ -130,22 +130,27 @@ function Cart() {
     },[]
     )
 
+    let totalPrice = 0;
+    let totalQuantity = 0;
+
+    for (let cart of cartlist){
+        totalPrice += cart.price;
+        totalQuantity += cart.quantity;
+    }
+
 
     return (
     <div>
         <h1>{msg}</h1>
-        <div className="continue-shopping">
-            <Link to="/home"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s2mtboH-sMR_0pT_vgDeWFK88j-I0YOjxQ&usqp=CAU" alt="arrow" className="arrow-icon"/></Link>
-            <h3>continue shopping</h3>
-        </div>
+        
         <div className="cart-icon">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXVBcdEwjcPkUTnpyfPpd3mDTcOf4V4qo0kg&usqp=CAU" alt="cart"/>
-            <p>7</p>
+            <p>{totalQuantity}</p>
 
         </div>
         <div className="main-cart-section">
             <h1>Shopping cart</h1>
-            <p className="total-items">You have <span className="total-items-count">7</span> items in your cart</p>
+            <p className="total-items">You have <span className="total-items-count">{totalQuantity}</span> items in your cart</p>
             <div className="cart-items">
                 <div className="cart-items-container">
                     
@@ -192,7 +197,7 @@ function Cart() {
 
         </div>
         <div className="card-total">
-            <h3>card Total:<span>4200</span>/-</h3>
+            <h3>card Total:<span>{totalPrice}</span>/-</h3>
             <button>Checkout</button>
 
         </div>

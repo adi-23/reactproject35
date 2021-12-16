@@ -27,6 +27,14 @@
     {
       "credentials": "uppalanishita11@gmail.com:12345",
       "id": 7
+    },
+    {
+      "credentials": "nishi:123",
+      "id": 8
+    },
+    {
+      "credentials": "var:123",
+      "id": 9
     }
   ],
   "catogeries": [
@@ -59,8 +67,8 @@
     {
       "id": 1,
       "categories": "Mobiles",
-      "title": "T-shirt",
-      "brand": "Jack and Jones",
+      "title": "Smart phone",
+      "brand": "Vivo",
       "price": 600,
       "initialprice": 600,
       "quantity": 1
@@ -82,6 +90,33 @@
       "price": 600,
       "initialprice": 600,
       "quantity": 1
+    },
+    {
+      "id": 4,
+      "categories": "Electronics",
+      "title": "Power Banks",
+      "brand": "Mi",
+      "price": 500,
+      "initialprice": 500,
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "categories": "Books",
+      "title": "Novels",
+      "brand": "Harry Potter",
+      "price": 500,
+      "initialprice": 500,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "categories": "Computers",
+      "title": "Mouse",
+      "brand": "Hp",
+      "price": 1000,
+      "initialprice": 1000,
+      "quantity": 1
     }
   ],
   "comments": [
@@ -95,7 +130,7 @@
     {
       "id": 3,
       "body": [
-        "Better taste"
+        "Better battery back up"
       ],
       "productId": 1
     },
@@ -108,7 +143,17 @@
       "productId": 2
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "categories": "Mobiles",
+      "title": "Smart phone",
+      "brand": "Vivo",
+      "quantity": 8,
+      "initialprice": 600,
+      "price": 4800
+    }
+  ],
   "profile": [
     {
       "username": "varshini",
@@ -127,15 +172,6 @@
       "city": "guntur",
       "address": "guntur dist",
       "id": 2
-    },
-    {
-      "username": "madhesh",
-      "firstname": "aditya",
-      "lastname": "kotikalpudi",
-      "H.no": "998-23/6",
-      "city": "near temple",
-      "address": "palakollu",
-      "id": 3
     },
     {
       "username": "uppalanishita11@gmail.com",
@@ -163,15 +199,6 @@
       "city": "NELLORE",
       "address": "Sapthagiri Enclave,Pappula street,Nellore",
       "id": 6
-    },
-    {
-      "username": "",
-      "firstname": "Kota",
-      "lastname": "Varshini",
-      "H.no": "8-4-645",
-      "city": "NELLORE",
-      "address": "Sapthagiri Enclave,Pappula street,Nellore",
-      "id": 7
     }
   ]
 }

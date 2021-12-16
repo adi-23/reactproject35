@@ -53,7 +53,7 @@ function Nav(props) {
             alignItems: "center",
             height: 70}}>
         
-            <h1 style={{color:"#fff", marginLeft:30}}>Demo</h1>
+            <h1 style={{color:"#fff", marginLeft:30}}>Dream Basket</h1>
 
             <center><h1 style={{color:"#fff", marginLeft:30}}>{props.user}</h1></center>
             <nav>
