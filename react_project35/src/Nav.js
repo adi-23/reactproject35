@@ -4,8 +4,8 @@ import Aboutus from './Aboutus';
 import Cart from './Cart';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Icon } from 'semantic-ui-react'
-import "./Nav.css"
-import  './App.css';
+import "./components/CSS/Navbar.css";
+// import "./Nav.css";
 
 function Nav(props) {
     return (

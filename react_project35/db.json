@@ -59,30 +59,29 @@
     {
       "id": 1,
       "categories": "Mobiles",
-      "title": "mobile",
-      "brand": "Redmi",
-      "price": 600
+      "title": "T-shirt",
+      "brand": "Jack and Jones",
+      "price": 600,
+      "initialprice": 600,
+      "quantity": 1
     },
     {
       "id": 2,
       "categories": "Fashion",
       "title": "formal shirt",
       "brand": "Twills",
-      "price": 800
+      "price": 800,
+      "initialprice": 800,
+      "quantity": 1
     },
     {
       "id": 3,
       "categories": "Home&Kitchen",
       "title": "Cooker",
       "brand": "Preethi",
-      "price": 600
-    },
-    {
-      "id": 4,
-      "categories": "Electronics",
-      "title": "Home Audio",
-      "brand": "JBL",
-      "price": 700
+      "price": 600,
+      "initialprice": 600,
+      "quantity": 1
     }
   ],
   "comments": [
@@ -109,18 +108,7 @@
       "productId": 2
     }
   ],
-  "cart": [
-    {
-      "productId": 1,
-      "quantity": 4,
-      "id": 1
-    },
-    {
-      "productId": 4,
-      "quantity": 1,
-      "id": 2
-    }
-  ],
+  "cart": [],
   "profile": [
     {
       "username": "varshini",

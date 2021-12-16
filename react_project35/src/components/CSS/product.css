@@ -1,0 +1,260 @@
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 30px;
+    font-size: 45px;
+  }
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.product-container{
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.product-card{
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.discount-tag{
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn{
+  opacity: 1;
+}
+
+.card-btn:hover{
+  background: #efefef;
+}
+
+.product-info{
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand{
+  text-transform: uppercase;
+}
+
+.product-short-des{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.75;
+  text-transform: capitalize;
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price{
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.details{
+  width: 50%;
+}
+
+.details .product-brand{
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.details .product-short-des{
+  font-size: 25px;
+  line-height: 30px;
+  height: auto;
+  margin: 15px 0 30px;
+}
+
+.product-price{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.product-actual-price{
+  font-size: 30px;
+  opacity: 0.5;
+  text-decoration: line-through;
+  margin: 0 20px;
+  font-weight: 300;
+}
+
+.product-discount{
+  color: #ff7d7d;
+  font-size: 20px;
+}
+
+.product-sub-heading{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 60px 0 10px;
+  font-weight: 300;
+}
+
+.size-radio-btn{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #383838;
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 0;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #383838;
+  cursor: pointer;
+}
+
+.size-radio-btn.check{
+  background: #383838;
+  color: #fff;
+}
+
+.btn{
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #383838;
+  color: #383838;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.cart-btn{
+  margin-right: 2%;
+  background: #383838;
+  color: #fff;
+}
+.product-details{
+  width: 100%;
+  padding: 60px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-slider{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  
+  background-size: cover;
+}
+
+.product-images{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.product-images img{
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.product-images img.active{
+  opacity: 0.5;
+}
